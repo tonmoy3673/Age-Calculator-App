@@ -1,43 +1,48 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.main-container{
+html, body {
+    height: 100%; 
+}
+.main-container {
     width: 100%;
     height: 100vh;
     background: linear-gradient(135deg, #4203a9, #90bafc);
     font-family: "Poppins", sans-serif;
 }
-.container{
+
+.container {
     padding: 20px 0;
     margin: 0 auto;
     width: 100%;
     max-width: 500px;
 }
-.title-text{
+
+.title-text {
     text-align: center;
     padding: 5px 0;
-    color:#ebfffc ;
-    font-size:2.4rem ;
+    color: #ebfffc;
+    font-size: 2.4rem;
 }
-.title{
-    color: rgba(255,255,255,0.3);
-    
+
+.title {
+    color: rgba(255, 255, 255, 0.3);
 }
-#input-container{
+
+#input-container {
     display: flex;
     margin-top: 15px;
     gap: 20px;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     align-items: center;
     justify-content: center;
-    padding:25px 30px ;
+    padding: 25px 30px;
     border-radius: 10px;
-    
 }
 
-#date{
+#date {
     position: relative;
     padding: 10px 15px;
     font-size: 1.3rem;
@@ -45,11 +50,11 @@
     border: 0;
     outline: 0;
     width: 240px;
-    color:#002339 ;
-    
+    color: #002339;
 }
-#date::-webkit-calendar-picker-indicator{
-    top:0;
+
+#date::-webkit-calendar-picker-indicator {
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -60,7 +65,8 @@
     background-size: 30px;
     cursor: pointer;
 }
-#cal-btn{
+
+#cal-btn {
     padding: 14px 20px;
     border: 0;
     outline: 0;
@@ -70,16 +76,96 @@
     font-size: 1.2rem;
     cursor: pointer;
 }
-#cal-btn:hover{
-    background-color: #ffff76;
-    color:#002339 ;
-}
-#cal-btn:disabled{
-    background-color: #a7a7a7; 
-    color: #bfbfbf; 
-    cursor: not-allowed; }
 
-#cal-btn:disabled:hover{
+#cal-btn:hover {
+    background-color: #ffff76;
+    color: #002339;
+}
+
+#cal-btn:disabled {
     background-color: #a7a7a7;
-    color: #bfbfbf; 
+    color: #bfbfbf;
+    cursor: not-allowed;
+}
+
+#cal-btn:disabled:hover {
+    background-color: #a7a7a7;
+    color: #bfbfbf;
+}
+
+#result {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 15px;
+    color: #ebfffc;
+}
+
+#result span {
+    color: #ffff76;
+}
+
+/* Tiny Mobile */
+@media (max-width: 400px) {
+    .main-container{
+        padding: 10px;
+      
+    }
+    
+
+    .title-text {
+        font-size: 1.8rem;
+    }
+
+    #input-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    #date {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #cal-btn {
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    #result {
+        font-size: 1.2rem;
+    }
+}
+
+/*  Mobile Device */
+@media (min-width: 401px) and (max-width: 768px) {
+    .main-container{
+       padding: 20px;
+     
+    }
+    .container {
+        max-width: 90%;
+    }
+
+    .title-text {
+        font-size: 2rem;
+    }
+
+    #input-container {
+        padding: 20px;
+    }
+
+    #date {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    #cal-btn {
+        font-size: 1.1rem;
+        width: 50%;
+    }
+
+    #result {
+        font-size: 1.2rem;
+    }
 }

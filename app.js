@@ -63,7 +63,7 @@ if (m3<0) {
 
 // ================== result text =============//
 const resultText = document.getElementById('result');
-resultText.innerHTML=`You are <span>${y3}</span> years, <span>${m3}</span> months, and <span>${d3}</span> days old.`;
+resultText.innerHTML=`You are <span>${y3}</span> years, <span>${m3}</span> months and <span>${d3}</span> days old.`;
 }
 
 // ============= get last date of the month ==========//
