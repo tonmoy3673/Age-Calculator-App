@@ -74,3 +74,12 @@
     background-color: #ffff76;
     color:#002339 ;
 }
+#cal-btn:disabled{
+    background-color: #a7a7a7; 
+    color: #bfbfbf; 
+    cursor: not-allowed; }
+
+#cal-btn:disabled:hover{
+    background-color: #a7a7a7;
+    color: #bfbfbf; 
+}
