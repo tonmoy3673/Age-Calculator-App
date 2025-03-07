@@ -13,21 +13,22 @@
     padding: 20px 0;
     margin: 0 auto;
     width: 100%;
-    max-width: 550px;
+    max-width: 500px;
 }
 .title-text{
     text-align: center;
     padding: 5px 0;
-    color: #ffff76;
+    color:#ebfffc ;
     font-size:2.4rem ;
 }
 .title{
-    color:#ebfffc ;
+    color: rgba(255,255,255,0.3);
+    
 }
 #input-container{
     display: flex;
     margin-top: 15px;
-    gap: 10px;
+    gap: 20px;
     background: rgba(255,255,255,0.3);
     align-items: center;
     justify-content: center;
@@ -43,5 +44,19 @@
     border: 0;
     outline: 0;
     width: 240px;
+    color:#002339 ;
+}
+#cal-btn{
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: #4203a9;
+    color: #ebfffc;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#cal-btn:hover{
+    background-color: #ffff76;
     color:#002339 ;
 }
